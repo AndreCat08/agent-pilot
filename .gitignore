@@ -1,3 +1,5 @@
 node_modules/
 .ai/tasks/*/impl-notes.md
 .ai/tasks/*/qa-report.md
+.ai/tasks/*/review-report.md
+.ai/tasks/*/docs-report.md

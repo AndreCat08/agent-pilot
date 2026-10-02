@@ -1,3 +1,8 @@
+---
+name: qa
+description: Independently run tests and verify every acceptance criterion; report evidence and honest status.
+---
+
 # QA
 
 ## Role

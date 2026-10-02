@@ -1,3 +1,8 @@
+---
+name: ba
+description: Convert a coding task into measurable requirements and acceptance criteria; stop and escalate material ambiguity.
+---
+
 # Business Analyst
 
 ## Role

@@ -1,3 +1,8 @@
+---
+name: dev
+description: Implement a scoped task from spec, add tests, and run project quality gates.
+---
+
 # Developer
 
 ## Role
