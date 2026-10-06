@@ -1,0 +1,166 @@
+{
+  "task_id": "T-002",
+  "step": "stopped",
+  "status": "STOPPED",
+  "stop_reason": "push failed: fatal: could not read Username for 'https://github.com': No such device or address\n",
+  "dev_retries": 0,
+  "started_at": "2026-10-05T02:35:35Z",
+  "updated_at": "2026-10-06T09:13:41Z",
+  "runs": [
+    {
+      "ts": "2026-10-05T02:45:40Z",
+      "role": "ba",
+      "status": "SUCCESS",
+      "rounds": 1,
+      "duration_seconds": 212.0,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/ba-20261005T024208Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/ba-20261005T024208Z.stderr"
+    },
+    {
+      "ts": "2026-10-05T02:56:52Z",
+      "role": "dev",
+      "status": "SUCCESS",
+      "rounds": 1,
+      "duration_seconds": 672.0,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261005T024540Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261005T024540Z.stderr"
+    },
+    {
+      "ts": "2026-10-05T03:10:27Z",
+      "role": "dev",
+      "status": "SUCCESS",
+      "rounds": 2,
+      "duration_seconds": 812.9,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261005T025654Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261005T025654Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T07:45:24Z",
+      "role": "dev",
+      "status": "SUCCESS",
+      "rounds": 1,
+      "duration_seconds": 166.7,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T074238Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T074238Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T07:52:10Z",
+      "role": "qa",
+      "status": "FAILED",
+      "rounds": 1,
+      "duration_seconds": 405.7,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T074525Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T074525Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T07:54:13Z",
+      "role": "dev",
+      "status": "SUCCESS",
+      "rounds": 1,
+      "duration_seconds": 122.8,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T075211Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T075211Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T08:04:14Z",
+      "role": "qa",
+      "status": "TIMEOUT",
+      "rounds": 1,
+      "duration_seconds": 600.5,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T075414Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T075414Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T08:09:35Z",
+      "role": "dev",
+      "status": "SUCCESS",
+      "rounds": 1,
+      "duration_seconds": 320.8,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T080414Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T080414Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T08:15:11Z",
+      "role": "qa",
+      "status": "FAILED",
+      "rounds": 1,
+      "duration_seconds": 335.6,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T080935Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T080935Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T08:38:02Z",
+      "role": "qa",
+      "status": "FAILED",
+      "rounds": 1,
+      "duration_seconds": 381.4,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T083141Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T083141Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T08:43:52Z",
+      "role": "dev",
+      "status": "SUCCESS",
+      "rounds": 2,
+      "duration_seconds": 349.7,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T083802Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T083802Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T08:49:09Z",
+      "role": "qa",
+      "status": "FAILED",
+      "rounds": 1,
+      "duration_seconds": 317.2,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T084352Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T084352Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T08:54:27Z",
+      "role": "dev",
+      "status": "SUCCESS",
+      "rounds": 3,
+      "duration_seconds": 317.5,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T084910Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/dev-20261006T084910Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T09:00:56Z",
+      "role": "qa",
+      "status": "FAILED",
+      "rounds": 1,
+      "duration_seconds": 389.2,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T085427Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T085427Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T09:10:16Z",
+      "role": "qa",
+      "status": "SUCCESS",
+      "rounds": 1,
+      "duration_seconds": 46.0,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T090930Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/qa-20261006T090930Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T09:12:00Z",
+      "role": "docs",
+      "status": "SUCCESS",
+      "rounds": 1,
+      "duration_seconds": 103.8,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/docs-20261006T091016Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/docs-20261006T091016Z.stderr"
+    },
+    {
+      "ts": "2026-10-06T09:13:40Z",
+      "role": "reviewer",
+      "status": "SUCCESS",
+      "rounds": 1,
+      "duration_seconds": 100.2,
+      "stdout_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/reviewer-20261006T091200Z.stdout",
+      "stderr_log": "/home/ubuntu/.local/state/agent-orchestrator/T-002/reviewer-20261006T091200Z.stderr"
+    }
+  ],
+  "pr_url": null,
+  "repo": "/home/ubuntu/agent-pilot"
+}
