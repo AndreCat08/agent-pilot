@@ -1,11 +1,11 @@
 {
   "task_id": "T-002",
-  "step": "reviewer",
-  "status": "INIT",
-  "stop_reason": null,
+  "step": "stopped",
+  "status": "STOPPED",
+  "stop_reason": "push failed: fatal: could not read Username for 'https://github.com': No such device or address\n",
   "dev_retries": 0,
   "started_at": "2026-10-05T02:35:35Z",
-  "updated_at": "2026-10-06T09:13:40Z",
+  "updated_at": "2026-10-06T09:13:41Z",
   "runs": [
     {
       "ts": "2026-10-05T02:45:40Z",
