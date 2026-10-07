@@ -2,16 +2,18 @@
 ## Status: PASS
 
 ## Acceptance Criteria
-- [x] 1. `src/lib.js` mengekspor `formatRupiah` yang lolos semua unit test — dibuktikan di `test/format.test.js:5-39` dan `test/lib.test.js:5`
-- [x] 2. `npm run check` lulus (eslint/lint yang dikonfig) — syntax check `src/index.js` dan `src/lib.js` exit 0
-- [x] 3. `npm test` lulus, termasuk test baru di `test/format.test.js` — 21 test pass (4 test di `test/format.test.js`, 17 test di `test/lib.test.js`)
-- [x] 4. Tidak menambahkan dependensi eksternal — `package.json` zero dependencies
+- [x] 1. `src/lib.js` mengekspor `formatRupiah` yang lolos semua unit test — dibuktikan di test/format.test.js baris 5 dan test/lib.test.js baris 5
+- [x] 2. `npm run check` lulus — sintaks valid di src/index.js dan src/lib.js (exit code 0)
+- [x] 3. `npm test` lulus, termasuk test baru di `test/format.test.js` — 21 test pass (test/format.test.js 4 subtest, test/lib.test.js 17 subtest)
+- [x] 4. Tidak menambahkan dependensi eksternal — package.json bersih, dependensi baru nol
 
 ## Quality Gate
 - Check: PASS
 - Test: PASS
 
 ## Catatan
-- Dev implementasi valid sesuai spec: format integer tanpa desimal (`Rp 1.500`), pecahan maks 2 digit (`Rp 1.500,56`), negatif `-(Rp 1.500)`, validasi input non-finite/non-number throw `TypeError`.
-- Edge case tertutup di test: `0`, float pembulatan (`1500.555`), `NaN`, `Infinity`, non-number types.
-- File `impl-notes.md` tidak dibuat Dev saat sesi dev sebelumnya berhenti; implementasi kode dan test suite lengkap dan valid.
+- Integer tanpa desimal: lolos di test/format.test.js:7-12
+- Pecahan maks 2 desimal koma: lolos di test/format.test.js:14-19
+- Negatif -(Rp ...): lolos di test/format.test.js:21-25
+- Penolakan tipe invalid / NaN / Infinity: lolos di test/format.test.js:27-38
+- Nol negatif (`-0`) diformat menjadi `Rp 0` karena `Math.abs(-0) === 0` dan `-0 < 0` bernilai false di JS. Sesuai perilaku umum finansial.
