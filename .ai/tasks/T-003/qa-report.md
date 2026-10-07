@@ -2,18 +2,18 @@
 ## Status: PASS
 
 ## Acceptance Criteria
-- [x] 1. `src/lib.js` mengekspor `formatRupiah` yang lolos semua unit test — dibuktikan di test/format.test.js baris 5 dan test/lib.test.js baris 5
-- [x] 2. `npm run check` lulus — sintaks valid di src/index.js dan src/lib.js (exit code 0)
-- [x] 3. `npm test` lulus, termasuk test baru di `test/format.test.js` — 21 test pass (test/format.test.js 4 subtest, test/lib.test.js 17 subtest)
-- [x] 4. Tidak menambahkan dependensi eksternal — package.json bersih, dependensi baru nol
+- [x] kriteria 1: `src/lib.js` mengekspor `formatRupiah` yang lolos semua unit test — dibuktikan di `src/lib.js` baris 36-63, `test/lib.test.js` baris 58-88, dan `test/format.test.js` baris 6, 10, 17, 22.
+- [x] kriteria 2: `npm run check` lulus — syntax check `src/index.js`, `src/lib.js`, `src/format.js` exit 0 tanpa error.
+- [x] kriteria 3: `npm test` lulus, termasuk test baru di `test/format.test.js` — 21 test pass (0 fail) di `test/format.test.js` (ok 1-4) dan `test/lib.test.js` (ok 5-21).
+- [x] kriteria 4: Tidak menambahkan dependensi eksternal — `package.json` zero-dependency, hanya Node.js built-in (`node:test`, `node:assert/strict`).
 
 ## Quality Gate
 - Check: PASS
 - Test: PASS
 
 ## Catatan
-- Integer tanpa desimal: lolos di test/format.test.js:7-12
-- Pecahan maks 2 desimal koma: lolos di test/format.test.js:14-19
-- Negatif -(Rp ...): lolos di test/format.test.js:21-25
-- Penolakan tipe invalid / NaN / Infinity: lolos di test/format.test.js:27-38
-- Nol negatif (`-0`) diformat menjadi `Rp 0` karena `Math.abs(-0) === 0` dan `-0 < 0` bernilai false di JS. Sesuai perilaku umum finansial.
+- Dev sediakan dua titik ekspor: `src/lib.js` (sesuai spec) dan modul baru `src/format.js`. Keduanya berfungsi identik.
+- Penanganan edge case lengkap: `null`, `undefined`, non-angka, non-finite (`NaN`, `Infinity`, `-Infinity`) melempar `TypeError`.
+- Pecahan diuji hingga pembulatan 2 desimal (`1500.555` -> `Rp 1.500,56`).
+- Angka negatif terformat `-(Rp ...)` sesuai kriteria.
+- Nol terformat `Rp 0`.

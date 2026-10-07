@@ -2,7 +2,7 @@
 ## Status: SKIPPED
 
 ## Documentation Changes
-- `README.md` — Tidak ada perubahan. `README.md` mendokumentasikan arsitektur pipeline agent, bukan referensi API internal `src/lib.js`.
+- `README.md` — Tidak perlu pembaruan. `README.md` hanya mendokumentasikan arsitektur pipeline agent dan quality gate, bukan katalog API fungsi utility internal (`src/lib.js` / `src/format.js`).
 
 ## Checks
 - Klaim cocok dengan implementasi terverifikasi: PASS

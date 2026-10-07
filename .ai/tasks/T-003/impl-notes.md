@@ -2,8 +2,9 @@
 ## Status: SUCCESS
 
 ## Yang Berubah
-- src/lib.js — implementasi formatRupiah sesuai spesifikasi (ribuan titik, desimal koma, negatif -(Rp ...))
-- test/format.test.js — test suite formatRupiah berbasis node:test dan assert
+- src/format.js — tambah modul utility formatRupiah
+- test/format.test.js — unit test komprehensif formatRupiah (integer, pecahan 2 desimal maks, negatif -(Rp ...), non-angka)
+- package.json — include src/format.js di check script
 
 ## Quality Gate
 - Check: PASS

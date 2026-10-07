@@ -3,3 +3,6 @@ node_modules/
 .ai/tasks/*/qa-report.md
 .ai/tasks/*/review-report.md
 .ai/tasks/*/docs-report.md
+.ai/tasks/*/state.json
+.ai/tasks/*/state.json.tmp
+.ai/tasks/*/.orchestrator.lock
