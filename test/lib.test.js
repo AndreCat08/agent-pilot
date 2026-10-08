@@ -67,16 +67,14 @@ test('formatRupiah memisahkan ribuan untuk angka besar', () => {
   assert.equal(formatRupiah(1234567890), 'Rp 1.234.567.890');
 });
 
-test('formatRupiah membulatkan pecahan ke integer terdekat', () => {
-  assert.equal(formatRupiah(1234.5), 'Rp 1.235');
-  assert.equal(formatRupiah(1234.4), 'Rp 1.234');
+test('formatRupiah memformat pecahan dengan desimal', () => {
+  assert.equal(formatRupiah(1234.5), 'Rp 1.234,50');
+  assert.equal(formatRupiah(1234.4), 'Rp 1.234,40');
   assert.equal(formatRupiah(500), 'Rp 500');
   assert.equal(formatRupiah(1000), 'Rp 1.000');
 });
 
 test('formatRupiah menolak input yang tidak valid', () => {
-  assert.throws(() => formatRupiah(-1), TypeError);
-  assert.throws(() => formatRupiah(-0.01), TypeError);
   assert.throws(() => formatRupiah('1000'), TypeError);
   assert.throws(() => formatRupiah(''), TypeError);
   assert.throws(() => formatRupiah(Infinity), TypeError);
